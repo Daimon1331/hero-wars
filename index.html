@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title></title>
+
+    <!-- Meta -->
+    <!-- Page Description Here -->
+    <meta name="title" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- Disable screen scaling-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<section class="main">
+    <header>
+        <div class="d-flex align-items-center justify-content-between margin">
+            <a href="/" class="logo-top">
+                <img alt="Hero Wars" src="img/logo.png">
+            </a>
+            <div class="d-flex justify-content-between register-login">
+                <h3 class="h3" data-bs-toggle="modal" data-bs-target="#modalregister">Register</h3>
+                <h3 class="h3" data-bs-toggle="modal" data-bs-target="#modallogin">Log in</h3>
+                <a class="h3" href="/">Home</a>
+            </div>
+        </div>
+    </header>
+    <div class="d-flex flex-column align-items-center justify-content-center content">
+        <div class="back-content">
+            <video autoplay playsinline loop muted poster="video/poster.jpg">
+                <source src="video/back_videonew.webm" type="video/webm">
+                <source src="video/back_videonew.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="back-black"></div>
+        <div class="container-h1">
+            <h1 class="h1">Welcome to The World of</h1>
+<!--            <h1 class="h1">Welcome to The World of</h1>-->
+        </div>
+        <a href="/" class="logo-big">
+            <img alt="Hero Wars" src="img/logo.gif">
+        </a>
+        <button class="green-button" data-bs-toggle="modal" data-bs-target="#modalregister">
+            <h2 class="h2">Play FREE!</h2>
+
+
+            <img src="img/back_button.svg">
+        </button>
+
+    </div>
+    <footer>
+        <div class="d-flex justify-content-between margin">
+            <h3 class="h3">2021 © Nexters</h3>
+            <a target="_blank" class="h3" href="https://hero-wars.com/policy/terms/en">Terms of Service</a>
+            <a target="_blank" class="h3" href="https://hero-wars.com/policy/privacy/en">Privacy and Cookie Policy</a>
+        </div>
+    </footer>
+</section>
+<div class="modal fade" id="modalregister" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal_back">
+                <img src="img/back_modal.svg">
+            </div>
+            <div class="close close-modal" data-bs-dismiss="modal" aria-label="Close">
+                <img alt="Hero Wars" src="img/close.png">
+            </div>
+            <div class="d-flex flex-column modal-body">
+                <p class="register-play name-modal">Register & Play</p>
+                <form>
+                    <div class="step1 box-step step-active">
+                        <p class="desc-modal">What should I call you?</p>
+
+                        <div class="input-valid">
+                            <input class="entryfield name" placeholder="Username"
+                                   name="name">
+                            <p>Use 3-30 letters and numbers.</p>
+                        </div>
+                        <div class="green-button">
+                            <p class="h2">Next</p>
+
+                            <img src="img/back_button.svg">
+                        </div>
+                        <p class="d-flex already-account">Already have an account? <span class="close-modal" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modallogin">Log In</span></p>
+                        <div class="pagination-modal">
+                            <img src="img/pagination1.svg">
+                        </div>
+                    </div>
+                    <div class="step2 box-step">
+                        <p class="desc-modal">Enter a strong password</p>
+                        <div class="input-valid">
+                            <input class="entryfield password" type="password" placeholder="Password"
+                                   name="password">
+                            <p>Use 6-40 symbols, except spaces, <, >, ', "</p>
+                            <svg class="password-button password-visible view" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.185 18.899L13.764 16.4765C12.8278 16.8112 11.8157 16.8732 10.8456 16.6553C9.87554 16.4373 8.98729 15.9483 8.28423 15.2453C7.58117 14.5422 7.09221 13.654 6.87424 12.6839C6.65628 11.7138 6.71827 10.7017 7.053 9.76551L3.963 6.67551C1.407 8.94801 0 11.531 0 11.531C0 11.531 4.5 19.781 12 19.781C13.4406 19.776 14.8649 19.4758 16.185 18.899ZM7.815 4.16301C9.13508 3.58614 10.5594 3.28597 12 3.28101C19.5 3.28101 24 11.531 24 11.531C24 11.531 22.5915 14.1125 20.0385 16.388L16.9455 13.295C17.2802 12.3588 17.3422 11.3467 17.1243 10.3766C16.9063 9.40655 16.4173 8.51829 15.7143 7.81524C15.0112 7.11218 14.123 6.62322 13.1529 6.40525C12.1828 6.18728 11.1707 6.24927 10.2345 6.58401L7.815 4.16451V4.16301Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                                <path d="M8.28786 11C8.20535 11.5765 8.25823 12.1642 8.4423 12.7167C8.62638 13.2692 8.9366 13.7712 9.34838 14.183C9.76015 14.5948 10.2622 14.905 10.8147 15.0891C11.3671 15.2731 11.9549 15.326 12.5314 15.2435L8.28636 11H8.28786ZM15.7129 12.062L11.4694 7.817C12.0458 7.73449 12.6336 7.78737 13.1861 7.97145C13.7385 8.15552 14.2406 8.46574 14.6523 8.87752C15.0641 9.28929 15.3743 9.79131 15.5584 10.3438C15.7425 10.8963 15.7954 11.484 15.7129 12.0605V12.062ZM20.4694 21.062L2.46936 3.062L3.53136 2L21.5314 20L20.4694 21.062Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                            </svg>
+                            <svg class="password-button password-hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.75 12C15.75 12.9946 15.3549 13.9484 14.6517 14.6517C13.9484 15.3549 12.9946 15.75 12 15.75C11.0054 15.75 10.0516 15.3549 9.34835 14.6517C8.64509 13.9484 8.25 12.9946 8.25 12C8.25 11.0054 8.64509 10.0516 9.34835 9.34835C10.0516 8.64509 11.0054 8.25 12 8.25C12.9946 8.25 13.9484 8.64509 14.6517 9.34835C15.3549 10.0516 15.75 11.0054 15.75 12Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                                <path d="M0 12C0 12 4.5 3.75 12 3.75C19.5 3.75 24 12 24 12C24 12 19.5 20.25 12 20.25C4.5 20.25 0 12 0 12ZM12 17.25C13.3924 17.25 14.7277 16.6969 15.7123 15.7123C16.6969 14.7277 17.25 13.3924 17.25 12C17.25 10.6076 16.6969 9.27226 15.7123 8.28769C14.7277 7.30312 13.3924 6.75 12 6.75C10.6076 6.75 9.27226 7.30312 8.28769 8.28769C7.30312 9.27226 6.75 10.6076 6.75 12C6.75 13.3924 7.30312 14.7277 8.28769 15.7123C9.27226 16.6969 10.6076 17.25 12 17.25Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                            </svg>
+                        </div>
+                        <div class="green-button">
+                            <p class="h2">Next</p>
+
+                            <img src="img/back_button.svg">
+                        </div>
+                        <p class="d-flex already-account">Already have an account? <span class="close-modal" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modallogin">Log In</span></p>
+                        <div class="pagination-modal">
+                            <img src="img/pagination2.svg">
+                        </div>
+                    </div>
+                    <div class="step3 box-step">
+                        <p class="desc-modal">How can I contact you in time of need?</p>
+
+                        <div class="input-valid">
+                            <input class="entryfield mail" placeholder="E-mail"
+                                   name="mail">
+                            <p>The email you entered is incorrect. Try again.</p>
+                        </div>
+                        <div class="d-flex box-check-ico">
+                            <label class="check-ico">
+                                <input class="consent" type="checkbox" name="agreement" onclick="check();" value="true"
+                                       autocomplete="off" required>
+                                <span class="d-flex align-items-center text-medium-16"></span>
+                            </label>
+                                <p class="politic">By signing up, you agree to our
+                                    <a target="_blank" href="https://hero-wars.com/policy/terms/en">Terms of Service</a>,
+                                    <a target="_blank" href="https://hero-wars.com/policy/privacy/en">Privacy and Cookie Policy</a>.</p>
+                        </div>
+                        <button type="button" class="green-button" disabled>
+                            <h2  class="h2">Play free</h2>
+
+                            <img src="img/back_button.svg">
+                        </button>
+                        <p class="d-flex already-account">Already have an account? <span class="close-modal" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modallogin">Log In</span></p>
+                        <div class="pagination-modal">
+                            <img src="img/pagination3.svg">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modallogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal_back">
+                <img src="img/back_modal.svg">
+            </div>
+            <div class="close close-modal" data-bs-dismiss="modal" aria-label="Close">
+                <img alt="Hero Wars" src="img/close.png">
+            </div>
+            <div class="d-flex flex-column modal-body">
+                <p class="register-play name-modal">Login</p>
+                <form>
+                    <div class="box-step step-active">
+                        <div class="input-valid">
+                            <input class="entryfield mail" placeholder="E-mail"
+                                   name="mail">
+                            <p>Field is required.</p>
+                            <p class="sign-up">Couldn’t find an account associated with this email. Want to
+                                <span class="close-modal" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modalregister">sing up</span>?</p>
+                        </div>
+                        <div class="input-valid">
+                            <input class="entryfield password" type="password" placeholder="Password"
+                                   name="password">
+                            <p>Your password is incorrect.</p>
+                            <svg class="password-button password-visible view" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.185 18.899L13.764 16.4765C12.8278 16.8112 11.8157 16.8732 10.8456 16.6553C9.87554 16.4373 8.98729 15.9483 8.28423 15.2453C7.58117 14.5422 7.09221 13.654 6.87424 12.6839C6.65628 11.7138 6.71827 10.7017 7.053 9.76551L3.963 6.67551C1.407 8.94801 0 11.531 0 11.531C0 11.531 4.5 19.781 12 19.781C13.4406 19.776 14.8649 19.4758 16.185 18.899ZM7.815 4.16301C9.13508 3.58614 10.5594 3.28597 12 3.28101C19.5 3.28101 24 11.531 24 11.531C24 11.531 22.5915 14.1125 20.0385 16.388L16.9455 13.295C17.2802 12.3588 17.3422 11.3467 17.1243 10.3766C16.9063 9.40655 16.4173 8.51829 15.7143 7.81524C15.0112 7.11218 14.123 6.62322 13.1529 6.40525C12.1828 6.18728 11.1707 6.24927 10.2345 6.58401L7.815 4.16451V4.16301Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                                <path d="M8.28786 11C8.20535 11.5765 8.25823 12.1642 8.4423 12.7167C8.62638 13.2692 8.9366 13.7712 9.34838 14.183C9.76015 14.5948 10.2622 14.905 10.8147 15.0891C11.3671 15.2731 11.9549 15.326 12.5314 15.2435L8.28636 11H8.28786ZM15.7129 12.062L11.4694 7.817C12.0458 7.73449 12.6336 7.78737 13.1861 7.97145C13.7385 8.15552 14.2406 8.46574 14.6523 8.87752C15.0641 9.28929 15.3743 9.79131 15.5584 10.3438C15.7425 10.8963 15.7954 11.484 15.7129 12.0605V12.062ZM20.4694 21.062L2.46936 3.062L3.53136 2L21.5314 20L20.4694 21.062Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                            </svg>
+                            <svg class="password-button password-hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.75 12C15.75 12.9946 15.3549 13.9484 14.6517 14.6517C13.9484 15.3549 12.9946 15.75 12 15.75C11.0054 15.75 10.0516 15.3549 9.34835 14.6517C8.64509 13.9484 8.25 12.9946 8.25 12C8.25 11.0054 8.64509 10.0516 9.34835 9.34835C10.0516 8.64509 11.0054 8.25 12 8.25C12.9946 8.25 13.9484 8.64509 14.6517 9.34835C15.3549 10.0516 15.75 11.0054 15.75 12Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                                <path d="M0 12C0 12 4.5 3.75 12 3.75C19.5 3.75 24 12 24 12C24 12 19.5 20.25 12 20.25C4.5 20.25 0 12 0 12ZM12 17.25C13.3924 17.25 14.7277 16.6969 15.7123 15.7123C16.6969 14.7277 17.25 13.3924 17.25 12C17.25 10.6076 16.6969 9.27226 15.7123 8.28769C14.7277 7.30312 13.3924 6.75 12 6.75C10.6076 6.75 9.27226 7.30312 8.28769 8.28769C7.30312 9.27226 6.75 10.6076 6.75 12C6.75 13.3924 7.30312 14.7277 8.28769 15.7123C9.27226 16.6969 10.6076 17.25 12 17.25Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                            </svg>
+                        </div>
+                        <p class="forgot-password close-modal" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modalreset">Forgot password?</p>
+                        <button type="button" class="green-button">
+                            <h2 class="h2">Play free!</h2>
+
+                            <img src="img/back_button.svg">
+                        </button>
+                        <p class="d-flex already-account">Don't have an account? <span class="close-modal" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modalregister">Register now</span></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalreset" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal_back">
+                <img src="img/back_modal.svg">
+            </div>
+            <div class="close close-modal" data-bs-dismiss="modal" aria-label="Close">
+                <img alt="Hero Wars" src="img/close.png">
+            </div>
+            <div class="d-flex flex-column modal-body">
+                <p class="register-play name-modal">Reset password</p>
+                <form>
+                    <div class="box-step step-active">
+                        <div class="input-valid">
+                            <input class="entryfield mail" placeholder="E-mail"
+                                   name="mail">
+                        </div>
+                        <button type="button" class="green-button">
+                            <h2 class="h2">Reset</h2>
+
+                            <img src="img/back_button.svg">
+                        </button>
+                        <p class="d-flex already-account">Don't have an account? <span class="close-modal" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modalregister">Register now</span></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalupdatepassword" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal_back">
+                <img src="img/back_modal.svg">
+            </div>
+            <div class="close close-modal" data-bs-dismiss="modal" aria-label="Close">
+                <img alt="Hero Wars" src="img/close.png">
+            </div>
+            <div class="d-flex flex-column modal-body">
+                <p class="register-play name-modal">Login</p>
+                <form>
+                    <div class="box-step step-active">
+                        <p class="desc-modal">Enter your new password</p>
+                        <div class="input-valid">
+                            <input class="entryfield password password-new" type="password" placeholder="Password"
+                                   name="password">
+                            <p>Use 6-40 symbols, except spaces, <, >, ', "</p>
+                            <svg class="password-button password-visible view" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.185 18.899L13.764 16.4765C12.8278 16.8112 11.8157 16.8732 10.8456 16.6553C9.87554 16.4373 8.98729 15.9483 8.28423 15.2453C7.58117 14.5422 7.09221 13.654 6.87424 12.6839C6.65628 11.7138 6.71827 10.7017 7.053 9.76551L3.963 6.67551C1.407 8.94801 0 11.531 0 11.531C0 11.531 4.5 19.781 12 19.781C13.4406 19.776 14.8649 19.4758 16.185 18.899ZM7.815 4.16301C9.13508 3.58614 10.5594 3.28597 12 3.28101C19.5 3.28101 24 11.531 24 11.531C24 11.531 22.5915 14.1125 20.0385 16.388L16.9455 13.295C17.2802 12.3588 17.3422 11.3467 17.1243 10.3766C16.9063 9.40655 16.4173 8.51829 15.7143 7.81524C15.0112 7.11218 14.123 6.62322 13.1529 6.40525C12.1828 6.18728 11.1707 6.24927 10.2345 6.58401L7.815 4.16451V4.16301Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                                <path d="M8.28786 11C8.20535 11.5765 8.25823 12.1642 8.4423 12.7167C8.62638 13.2692 8.9366 13.7712 9.34838 14.183C9.76015 14.5948 10.2622 14.905 10.8147 15.0891C11.3671 15.2731 11.9549 15.326 12.5314 15.2435L8.28636 11H8.28786ZM15.7129 12.062L11.4694 7.817C12.0458 7.73449 12.6336 7.78737 13.1861 7.97145C13.7385 8.15552 14.2406 8.46574 14.6523 8.87752C15.0641 9.28929 15.3743 9.79131 15.5584 10.3438C15.7425 10.8963 15.7954 11.484 15.7129 12.0605V12.062ZM20.4694 21.062L2.46936 3.062L3.53136 2L21.5314 20L20.4694 21.062Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                            </svg>
+                            <svg class="password-button password-hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.75 12C15.75 12.9946 15.3549 13.9484 14.6517 14.6517C13.9484 15.3549 12.9946 15.75 12 15.75C11.0054 15.75 10.0516 15.3549 9.34835 14.6517C8.64509 13.9484 8.25 12.9946 8.25 12C8.25 11.0054 8.64509 10.0516 9.34835 9.34835C10.0516 8.64509 11.0054 8.25 12 8.25C12.9946 8.25 13.9484 8.64509 14.6517 9.34835C15.3549 10.0516 15.75 11.0054 15.75 12Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                                <path d="M0 12C0 12 4.5 3.75 12 3.75C19.5 3.75 24 12 24 12C24 12 19.5 20.25 12 20.25C4.5 20.25 0 12 0 12ZM12 17.25C13.3924 17.25 14.7277 16.6969 15.7123 15.7123C16.6969 14.7277 17.25 13.3924 17.25 12C17.25 10.6076 16.6969 9.27226 15.7123 8.28769C14.7277 7.30312 13.3924 6.75 12 6.75C10.6076 6.75 9.27226 7.30312 8.28769 8.28769C7.30312 9.27226 6.75 10.6076 6.75 12C6.75 13.3924 7.30312 14.7277 8.28769 15.7123C9.27226 16.6969 10.6076 17.25 12 17.25Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                            </svg>
+                        </div>
+                        <div class="input-valid">
+                            <input class="entryfield password password-confirm" type="password" placeholder="Password"
+                                   name="password">
+                            <p>The passwords entered do not match. Please re-enter your password.</p>
+                            <svg class="password-button password-visible view" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.185 18.899L13.764 16.4765C12.8278 16.8112 11.8157 16.8732 10.8456 16.6553C9.87554 16.4373 8.98729 15.9483 8.28423 15.2453C7.58117 14.5422 7.09221 13.654 6.87424 12.6839C6.65628 11.7138 6.71827 10.7017 7.053 9.76551L3.963 6.67551C1.407 8.94801 0 11.531 0 11.531C0 11.531 4.5 19.781 12 19.781C13.4406 19.776 14.8649 19.4758 16.185 18.899ZM7.815 4.16301C9.13508 3.58614 10.5594 3.28597 12 3.28101C19.5 3.28101 24 11.531 24 11.531C24 11.531 22.5915 14.1125 20.0385 16.388L16.9455 13.295C17.2802 12.3588 17.3422 11.3467 17.1243 10.3766C16.9063 9.40655 16.4173 8.51829 15.7143 7.81524C15.0112 7.11218 14.123 6.62322 13.1529 6.40525C12.1828 6.18728 11.1707 6.24927 10.2345 6.58401L7.815 4.16451V4.16301Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                                <path d="M8.28786 11C8.20535 11.5765 8.25823 12.1642 8.4423 12.7167C8.62638 13.2692 8.9366 13.7712 9.34838 14.183C9.76015 14.5948 10.2622 14.905 10.8147 15.0891C11.3671 15.2731 11.9549 15.326 12.5314 15.2435L8.28636 11H8.28786ZM15.7129 12.062L11.4694 7.817C12.0458 7.73449 12.6336 7.78737 13.1861 7.97145C13.7385 8.15552 14.2406 8.46574 14.6523 8.87752C15.0641 9.28929 15.3743 9.79131 15.5584 10.3438C15.7425 10.8963 15.7954 11.484 15.7129 12.0605V12.062ZM20.4694 21.062L2.46936 3.062L3.53136 2L21.5314 20L20.4694 21.062Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                            </svg>
+                            <svg class="password-button password-hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.75 12C15.75 12.9946 15.3549 13.9484 14.6517 14.6517C13.9484 15.3549 12.9946 15.75 12 15.75C11.0054 15.75 10.0516 15.3549 9.34835 14.6517C8.64509 13.9484 8.25 12.9946 8.25 12C8.25 11.0054 8.64509 10.0516 9.34835 9.34835C10.0516 8.64509 11.0054 8.25 12 8.25C12.9946 8.25 13.9484 8.64509 14.6517 9.34835C15.3549 10.0516 15.75 11.0054 15.75 12Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                                <path d="M0 12C0 12 4.5 3.75 12 3.75C19.5 3.75 24 12 24 12C24 12 19.5 20.25 12 20.25C4.5 20.25 0 12 0 12ZM12 17.25C13.3924 17.25 14.7277 16.6969 15.7123 15.7123C16.6969 14.7277 17.25 13.3924 17.25 12C17.25 10.6076 16.6969 9.27226 15.7123 8.28769C14.7277 7.30312 13.3924 6.75 12 6.75C10.6076 6.75 9.27226 7.30312 8.28769 8.28769C7.30312 9.27226 6.75 10.6076 6.75 12C6.75 13.3924 7.30312 14.7277 8.28769 15.7123C9.27226 16.6969 10.6076 17.25 12 17.25Z" fill="#FFE5B5" fill-opacity="0.2"/>
+                            </svg>
+                        </div>
+                        <div class="green-button">
+                            <button class="h2">Save</button>
+
+<!--                            <img src="img/back_button_click.svg">-->
+                            <img src="img/back_button.svg">
+                        </div>
+                        <p class="d-flex already-account">Don't have an account? <span class="close-modal" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#modalregister">Register now</span></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

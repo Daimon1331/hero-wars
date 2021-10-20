@@ -1,0 +1,640 @@
+html * {
+  outline: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  display: block; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style-type: none; }
+
+img, svg {
+  vertical-align: middle;
+  max-width: 100%; }
+
+input, textarea {
+  -webkit-border-radius: 0;
+  -webkit-appearance: none; }
+
+button {
+  outline: 0 !important; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, p {
+  margin: 0; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, p {
+  color: white;
+  position: relative;
+  z-index: 4; }
+
+.h1 {
+  font-family: "Tobi-Regular", sans-serif;
+  font-size: 40px;
+  line-height: 47px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdd77), to(#f8b300));
+  background: linear-gradient(180deg, #ffdd77, #f8b300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap; }
+  @media screen and (max-width: 700px) {
+    .h1 {
+      font-size: 24px;
+      line-height: 28px; } }
+
+.h2 {
+  font-family: "Tobi-Regular", sans-serif;
+  font-size: 36px;
+  line-height: 42px; }
+  @media screen and (max-width: 700px) {
+    .h2 {
+      font-size: 20px;
+      line-height: 24px; } }
+
+.h3 {
+  font-family: "RobotoCondensed-Light", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F8B300; }
+  @media screen and (max-width: 700px) {
+    .h3 {
+      font-size: 14px;
+      line-height: 16px; } }
+
+.h4 {
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: 30px;
+  line-height: 125%; }
+  @media screen and (max-width: 1050px) {
+    .h4 {
+      font-size: 20px; } }
+
+.h5 {
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 125%; }
+  @media screen and (max-width: 1050px) {
+    .h5 {
+      font-size: 22px; } }
+
+.h6 {
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 125%;
+  opacity: 0.65; }
+  @media screen and (max-width: 1050px) {
+    .h6 {
+      font-size: 22px; } }
+
+.forgot-password {
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 24px; }
+
+.name-modal {
+  font-family: "NotoSans-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 74px;
+  color: #FFE5B5; }
+  @media screen and (max-width: 700px) {
+    .name-modal {
+      font-size: 28px;
+      line-height: 98px; } }
+
+.desc-modal {
+  font-family: "RobotoCondensed-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFE5B5; }
+  @media screen and (max-width: 700px) {
+    .desc-modal {
+      font-size: 18px;
+      line-height: 21px; } }
+
+button, .btn-secondary, .btn-secondary:focus, .btn-secondary:hover, .btn-secondary:active, .btn-primary, .btn-primary:focus, .btn-primary:hover, .btn-primary:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none;
+  border-radius: 0;
+  border: none;
+  background: transparent; }
+
+.green-button {
+  position: relative;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+  .green-button .h2 {
+    color: #E4FF4C;
+    background: -webkit-gradient(linear, left top, left bottom, from(#422623), to(#e12100));
+    background: linear-gradient(180deg, #422623 0%, #e12100 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #741800; }
+  .green-button img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.green-button {
+  z-index: 5;
+  padding: 19px 53px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  @media screen and (max-width: 700px) {
+    .green-button {
+      padding: 12px 22px; } }
+
+.green-button:hover .h2 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#921616), to(#ff2200));
+  background: linear-gradient(0deg, #921616 0%, #ff2200 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #741800; }
+
+.green-button:disabled {
+  opacity: 0.8;
+  cursor: auto; }
+
+.margin {
+  position: relative;
+  z-index: 5;
+  width: 1170px;
+  margin: 0 auto; }
+  @media screen and (max-width: 1300px) {
+    .margin {
+      width: 1100px; } }
+  @media screen and (max-width: 1200px) {
+    .margin {
+      width: 940px; } }
+  @media screen and (max-width: 1050px) {
+    .margin {
+      width: 100%;
+      padding: 0 30px; } }
+
+.mb-8 {
+  margin-bottom: 8px; }
+
+.mb-16 {
+  margin-bottom: 16px; }
+
+.mb-32 {
+  margin-bottom: 32px; }
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .main header {
+    background-color: #111111;
+    padding: 9px 0 10px; }
+    .main header .margin {
+      width: 100%;
+      padding: 0 40px; }
+      @media screen and (max-width: 700px) {
+        .main header .margin {
+          -webkit-box-pack: center !important;
+              -ms-flex-pack: center !important;
+                  justify-content: center !important; } }
+      .main header .margin .logo-top {
+        height: 41px;
+        width: 45px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 45px;
+                flex: 0 0 45px; }
+        @media screen and (max-width: 700px) {
+          .main header .margin .logo-top {
+            display: none; } }
+      .main header .margin .register-login {
+        width: 165px; }
+        @media screen and (max-width: 700px) {
+          .main header .margin .register-login {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse; } }
+        .main header .margin .register-login .h3:nth-child(3) {
+          display: none; }
+          @media screen and (max-width: 700px) {
+            .main header .margin .register-login .h3:nth-child(3) {
+              display: block; } }
+    .main header .h3 {
+      cursor: pointer;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      opacity: 0.8; }
+    .main header .h3:hover {
+      -webkit-text-stroke: 1px #F8B300;
+      opacity: 1; }
+  .main .content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .main .content .back-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .main .content .back-content video {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .main .content .back-black {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(17, 17, 17, 0.6); }
+    .main .content .container-h1, .main .content .logo-big, .main .content button {
+      position: relative; }
+    .main .content .container-h1 {
+      margin-top: 62px;
+      margin-bottom: -17px;
+      width: 487px;
+      height: 133px;
+      background-image: url("../img/light.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      @media screen and (max-width: 700px) {
+        .main .content .container-h1 {
+          width: 313px;
+          height: 70px; } }
+    .main .content .logo-big {
+      height: 397px;
+      margin-bottom: 35px;
+      -webkit-filter: drop-shadow(0px 0px 80px rgba(251, 198, 53, 0.2));
+              filter: drop-shadow(0px 0px 80px rgba(251, 198, 53, 0.2)); }
+      .main .content .logo-big img {
+        height: 100%; }
+      @media screen and (max-width: 800px) {
+        .main .content .logo-big {
+          height: 231px; } }
+    .main .content .green-button {
+      margin-bottom: 132px; }
+  .main footer {
+    padding: 36px 0 41px;
+    background-color: #111111; }
+    .main footer .margin {
+      width: 530px;
+      margin: 0 auto; }
+      @media screen and (max-width: 700px) {
+        .main footer .margin {
+          width: 100%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
+      .main footer .margin .h3 {
+        color: #F8B300;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        opacity: 0.8;
+        cursor: pointer; }
+        @media screen and (max-width: 700px) {
+          .main footer .margin .h3 {
+            margin-bottom: 32px; } }
+      .main footer .margin .h3:hover {
+        -webkit-text-stroke: 1px #F8B300;
+        opacity: 1; }
+      .main footer .margin .h3:last-child {
+        margin-bottom: 0; }
+
+#modalregister .modal-dialog, #modallogin .modal-dialog, #modalreset .modal-dialog, #modalupdatepassword .modal-dialog {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: none;
+  margin: 1.75rem auto; }
+  @media screen and (max-width: 700px) {
+    #modalregister .modal-dialog, #modallogin .modal-dialog, #modalreset .modal-dialog, #modalupdatepassword .modal-dialog {
+      margin: 0 auto; } }
+#modalregister .modal-content, #modallogin .modal-content, #modalreset .modal-content, #modalupdatepassword .modal-content {
+  padding: 83px 111px;
+  border: 2px solid #D89F6D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 9px 3px rgba(255, 229, 181, 0.3);
+          box-shadow: 0 0 9px 3px rgba(255, 229, 181, 0.3);
+  border-radius: 16px;
+  background-color: #111111; }
+  @media screen and (max-width: 991px) {
+    #modalregister .modal-content, #modallogin .modal-content, #modalreset .modal-content, #modalupdatepassword .modal-content {
+      padding: 83px 83px; } }
+  @media screen and (max-width: 700px) {
+    #modalregister .modal-content, #modallogin .modal-content, #modalreset .modal-content, #modalupdatepassword .modal-content {
+      padding: 44px 9px 60px; } }
+  #modalregister .modal-content .modal_back, #modallogin .modal-content .modal_back, #modalreset .modal-content .modal_back, #modalupdatepassword .modal-content .modal_back {
+    width: 80%;
+    height: 71%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 15px;
+    opacity: 0.5; }
+    @media screen and (max-width: 700px) {
+      #modalregister .modal-content .modal_back, #modallogin .modal-content .modal_back, #modalreset .modal-content .modal_back, #modalupdatepassword .modal-content .modal_back {
+        width: 100%;
+        height: 60%; } }
+    #modalregister .modal-content .modal_back img, #modallogin .modal-content .modal_back img, #modalreset .modal-content .modal_back img, #modalupdatepassword .modal-content .modal_back img {
+      width: 100%;
+      height: 100%;
+      -webkit-filter: drop-shadow(0px 0px 30px rgba(251, 198, 53, 0.2));
+              filter: drop-shadow(0px 0px 30px rgba(251, 198, 53, 0.2)); }
+  #modalregister .modal-content .close, #modallogin .modal-content .close, #modalreset .modal-content .close, #modalupdatepassword .modal-content .close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0.8;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  #modalregister .modal-content .close:hover, #modallogin .modal-content .close:hover, #modalreset .modal-content .close:hover, #modalupdatepassword .modal-content .close:hover {
+    opacity: 1; }
+  #modalregister .modal-content .modal-body, #modallogin .modal-content .modal-body, #modalreset .modal-content .modal-body, #modalupdatepassword .modal-content .modal-body {
+    width: 385px;
+    padding: 0; }
+    @media screen and (max-width: 700px) {
+      #modalregister .modal-content .modal-body, #modallogin .modal-content .modal-body, #modalreset .modal-content .modal-body, #modalupdatepassword .modal-content .modal-body {
+        width: 303px; } }
+    #modalregister .modal-content .modal-body .register-play, #modallogin .modal-content .modal-body .register-play, #modalreset .modal-content .modal-body .register-play, #modalupdatepassword .modal-content .modal-body .register-play {
+      width: 100%;
+      height: 74px;
+      text-align: center;
+      margin: 0 auto 50px;
+      background: radial-gradient(50% 6.25% at 50% 100%, #FFE750 0%, rgba(255, 231, 80, 0) 98.96%), radial-gradient(50% 65.63% at 50% 100%, rgba(186, 29, 35, 0.6) 0%, rgba(186, 29, 35, 0.2) 58.52%, rgba(186, 29, 35, 0) 100%); }
+      @media screen and (max-width: 700px) {
+        #modalregister .modal-content .modal-body .register-play, #modallogin .modal-content .modal-body .register-play, #modalreset .modal-content .modal-body .register-play, #modalupdatepassword .modal-content .modal-body .register-play {
+          margin: 0 auto 40px; } }
+    #modalregister .modal-content .modal-body form, #modallogin .modal-content .modal-body form, #modalreset .modal-content .modal-body form, #modalupdatepassword .modal-content .modal-body form {
+      position: relative; }
+      #modalregister .modal-content .modal-body form .desc-modal, #modallogin .modal-content .modal-body form .desc-modal, #modalreset .modal-content .modal-body form .desc-modal, #modalupdatepassword .modal-content .modal-body form .desc-modal {
+        margin-bottom: 24px; }
+      #modalregister .modal-content .modal-body form .green-button, #modallogin .modal-content .modal-body form .green-button, #modalreset .modal-content .modal-body form .green-button, #modalupdatepassword .modal-content .modal-body form .green-button {
+        padding: 15px 50px;
+        font-family: "Tobi-Regular", sans-serif;
+        font-size: 30px;
+        line-height: 35px; }
+        @media screen and (max-width: 700px) {
+          #modalregister .modal-content .modal-body form .green-button, #modallogin .modal-content .modal-body form .green-button, #modalreset .modal-content .modal-body form .green-button, #modalupdatepassword .modal-content .modal-body form .green-button {
+            padding: 8px 40px; } }
+      #modalregister .modal-content .modal-body form .already-account, #modalregister .modal-content .modal-body form .already-account > span, #modallogin .modal-content .modal-body form .already-account, #modallogin .modal-content .modal-body form .already-account > span, #modalreset .modal-content .modal-body form .already-account, #modalreset .modal-content .modal-body form .already-account > span, #modalupdatepassword .modal-content .modal-body form .already-account, #modalupdatepassword .modal-content .modal-body form .already-account > span {
+        font-family: "RobotoCondensed-Regular", sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFE5B5;
+        white-space: pre-wrap; }
+        #modalregister .modal-content .modal-body form .already-account span, #modalregister .modal-content .modal-body form .already-account > span span, #modallogin .modal-content .modal-body form .already-account span, #modallogin .modal-content .modal-body form .already-account > span span, #modalreset .modal-content .modal-body form .already-account span, #modalreset .modal-content .modal-body form .already-account > span span, #modalupdatepassword .modal-content .modal-body form .already-account span, #modalupdatepassword .modal-content .modal-body form .already-account > span span {
+          text-decoration: underline; }
+      #modalregister .modal-content .modal-body form .input-valid, #modalregister .modal-content .modal-body form .green-button, #modallogin .modal-content .modal-body form .input-valid, #modallogin .modal-content .modal-body form .green-button, #modalreset .modal-content .modal-body form .input-valid, #modalreset .modal-content .modal-body form .green-button, #modalupdatepassword .modal-content .modal-body form .input-valid, #modalupdatepassword .modal-content .modal-body form .green-button {
+        margin-bottom: 47px; }
+        @media screen and (max-width: 700px) {
+          #modalregister .modal-content .modal-body form .input-valid, #modalregister .modal-content .modal-body form .green-button, #modallogin .modal-content .modal-body form .input-valid, #modallogin .modal-content .modal-body form .green-button, #modalreset .modal-content .modal-body form .input-valid, #modalreset .modal-content .modal-body form .green-button, #modalupdatepassword .modal-content .modal-body form .input-valid, #modalupdatepassword .modal-content .modal-body form .green-button {
+            margin-bottom: 40px; } }
+      #modalregister .modal-content .modal-body form .already-account, #modallogin .modal-content .modal-body form .already-account, #modalreset .modal-content .modal-body form .already-account, #modalupdatepassword .modal-content .modal-body form .already-account {
+        margin-bottom: 13px; }
+      #modalregister .modal-content .modal-body form .box-step, #modallogin .modal-content .modal-body form .box-step, #modalreset .modal-content .modal-body form .box-step, #modalupdatepassword .modal-content .modal-body form .box-step {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
+      #modalregister .modal-content .modal-body form .step-active, #modallogin .modal-content .modal-body form .step-active, #modalreset .modal-content .modal-body form .step-active, #modalupdatepassword .modal-content .modal-body form .step-active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 400px; }
+      #modalregister .modal-content .modal-body form .step3 .input-valid, #modallogin .modal-content .modal-body form .step3 .input-valid, #modalreset .modal-content .modal-body form .step3 .input-valid, #modalupdatepassword .modal-content .modal-body form .step3 .input-valid {
+        margin-bottom: 20px; }
+
+.close-modal {
+  cursor: pointer; }
+
+#modallogin .modal-content .modal-body form .input-valid, #modalupdatepassword .modal-content .modal-body form .input-valid {
+  margin-bottom: 20px; }
+  #modallogin .modal-content .modal-body form .input-valid p, #modalupdatepassword .modal-content .modal-body form .input-valid p {
+    position: static;
+    top: 0;
+    left: 0;
+    padding-left: 16px;
+    margin-top: 0;
+    max-height: 0; }
+  #modallogin .modal-content .modal-body form .input-valid .invalid + p, #modalupdatepassword .modal-content .modal-body form .input-valid .invalid + p {
+    max-height: 50px;
+    margin-top: 5px; }
+#modallogin .modal-content .modal-body form .forgot-password, #modalupdatepassword .modal-content .modal-body form .forgot-password {
+  color: #BE9680;
+  margin-bottom: 32px;
+  width: 284px;
+  text-align: right; }
+  @media screen and (max-width: 700px) {
+    #modallogin .modal-content .modal-body form .forgot-password, #modalupdatepassword .modal-content .modal-body form .forgot-password {
+      width: 218px; } }
+#modallogin .modal-content .modal-body form .green-button, #modalupdatepassword .modal-content .modal-body form .green-button {
+  margin-bottom: 32px; }
+#modallogin .modal-content .modal-body form .already-account a, #modalupdatepassword .modal-content .modal-body form .already-account a {
+  text-decoration: underline; }
+
+#modalupdatepassword .modal-content .modal-body .name-modal {
+  margin: 0 auto 25px; }
+#modalupdatepassword .modal-content .modal-body form .box-step .input-valid:nth-child(3) {
+  margin-bottom: 32px; }
+
+.input-valid {
+  position: relative;
+  width: 284px; }
+  @media screen and (max-width: 700px) {
+    .input-valid {
+      width: 218px; } }
+  .input-valid .entryfield {
+    padding: 10px 8px 10px 16px;
+    border: 2px solid #915D24;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+    background: transparent;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    @media screen and (max-width: 700px) {
+      .input-valid .entryfield {
+        width: 218px; } }
+  .input-valid .entryfield, .input-valid .entryfield::-webkit-input-placeholder {
+    font-family: "RobotoCondensed-Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFE5B5;
+    letter-spacing: 0.01em; }
+  .input-valid .entryfield, .input-valid .entryfield:-ms-input-placeholder {
+    font-family: "RobotoCondensed-Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFE5B5;
+    letter-spacing: 0.01em; }
+  .input-valid .entryfield, .input-valid .entryfield::-ms-input-placeholder {
+    font-family: "RobotoCondensed-Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFE5B5;
+    letter-spacing: 0.01em; }
+  .input-valid .entryfield, .input-valid .entryfield::placeholder {
+    font-family: "RobotoCondensed-Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFE5B5;
+    letter-spacing: 0.01em; }
+  .input-valid .entryfield::-webkit-input-placeholder {
+    color: #915D24; }
+  .input-valid .entryfield:-ms-input-placeholder {
+    color: #915D24; }
+  .input-valid .entryfield::-ms-input-placeholder {
+    color: #915D24; }
+  .input-valid .entryfield::placeholder {
+    color: #915D24; }
+  .input-valid .valid {
+    border: 2px solid #4B941D; }
+  .input-valid .invalid, .input-valid .invalid-no-caption {
+    border: 2px solid #D32829; }
+  .input-valid .mail + p {
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    max-height: 0; }
+  .input-valid .mail.invalid + p {
+    margin-top: 5px;
+    max-height: 50px; }
+  .input-valid p {
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    position: absolute;
+    color: #D32829;
+    top: 55px;
+    left: 17px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 100%; }
+  .input-valid .invalid + p {
+    opacity: 1;
+    visibility: visible; }
+  .input-valid .password-button {
+    position: absolute;
+    right: 18px;
+    top: 24px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer; }
+  .input-valid .password-button.view {
+    opacity: 1;
+    visibility: visible; }
+
+.sign-up span {
+  color: #D32829;
+  text-decoration: underline;
+  display: inline;
+  cursor: pointer; }
+
+.box-check-ico {
+  margin-bottom: 30px;
+  width: 284px; }
+  .box-check-ico p, .box-check-ico a {
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px; }
+  .box-check-ico p {
+    color: #FFFAD6; }
+  .box-check-ico a {
+    color: #FFD66D;
+    text-decoration: underline;
+    display: inline; }
+
+.check-ico {
+  margin-top: 4px;
+  position: relative;
+  cursor: pointer; }
+  .check-ico input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    -webkit-appearance: auto;
+    left: 50%; }
+  .check-ico span::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    border: 2px solid #333333;
+    border-radius: 2px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16px;
+            flex: 0 0 16px; }
+
+.check-ico > input:checked + span::before {
+  background-image: url("../img/checkicon.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  background-color: transparent;
+  border: none; }
+
+#modalreset .name-modal, #modalreset .input-valid, #modalreset .green-button {
+  margin-bottom: 32px !important; }
+#modalreset .modal-content {
+  padding: 160px 111px; }
+  @media screen and (max-width: 991px) {
+    #modalreset .modal-content {
+      padding: 83px 83px; } }
+  @media screen and (max-width: 700px) {
+    #modalreset .modal-content {
+      padding: 44px 9px 60px; } }
